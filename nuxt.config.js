@@ -1,5 +1,7 @@
 // import colors from 'vuetify/es5/util/colors'
 
+const basePath = process.env.BASE_PATH || '/'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -70,7 +72,11 @@ export default {
   },
 
   router: {
-    base: process.env.NODE_ENV === 'dev' ? '/' : '/ln/'
+    base: basePath
+  },
+
+  env: {
+    basePath
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

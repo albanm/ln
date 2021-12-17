@@ -32,7 +32,7 @@
             </v-row>
           </v-col>
           <v-col class="pa-0" cols="12" md="6" order-md="1">
-            <v-img src="/adult-ge5ee21cb1_1920.jpg" height="600" />
+            <v-img :src="basePath + 'adult-ge5ee21cb1_1920.jpg'" height="600" />
           </v-col>
         </v-row>
       </v-sheet>
@@ -104,7 +104,7 @@
             <v-col class="pa-0" cols="12" md="6" order-md="1" align-self="center">
               <v-row justify="center">
                 <v-avatar width="200" height="200">
-                  <v-img src="/20190430_145301.jpg" />
+                  <v-img :src="basePath + '20190430_145301.jpg'" />
                 </v-avatar>
               </v-row>
             </v-col>
@@ -159,7 +159,12 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  computed: {
+    basePath () {
+      return process.env.basePath
+    }
+  }
 }
 </script>
 
