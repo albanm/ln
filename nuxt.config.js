@@ -69,6 +69,10 @@ export default {
     }
   },
 
+  router: {
+    base: process.env.NODE_ENV === 'dev' ? '/' : '/ln/'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
