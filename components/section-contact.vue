@@ -1,6 +1,6 @@
 <template>
   <v-container id="section-contact" fluid class="pa-0">
-    <v-card tile color="primary" dark>
+    <v-card tile flat color="primary" dark>
       <v-container>
         <v-row class="fill-height">
           <v-col
@@ -25,14 +25,14 @@
                   </h2>
                 </div>
 
-                <div class="mt-6 mb-12 contact-links">
+                <div class="mt-6 mb-12 contact-links text-body-1">
                   <p>Pour demander un devis ou simplément obtenir plus d'information, n'hésitez pas à me contacter.</p>
                   <p><v-icon>mdi-email</v-icon>&nbsp;<a href="mailto:hcabillic@gmail.com">hcabillic@gmail.com</a></p>
                   <p><v-icon>mdi-linkedin</v-icon>&nbsp;<a href="https://www.linkedin.com/in/h%C3%A9l%C3%A8ne-cabillic-baa2a6140">Linkedin</a></p>
                   <p style="position: relative;">
                     <img width="24" height="24" style="position: absolute;" :src="basePath + 'fiverr2.png'">
                     <span style="padding-left: 30px;"><a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a></span>
-                    <span style="padding-left: 30px;" class="caption">pour une commande exclusivement sur Fiverr</span>
+                    <br><span style="padding-left: 30px;" class="caption">pour une commande exclusivement sur Fiverr</span>
                   </p>
                 </div>
               </v-col>
@@ -56,7 +56,7 @@ export default {
 
 <style>
 .contact-links a {
-  color: white;
-  text-decoration:none;
+  color: white!important;
+  text-decoration:none!important;
 }
 </style>

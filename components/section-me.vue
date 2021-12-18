@@ -1,6 +1,6 @@
 <template>
   <v-container id="section-me" fluid class="pa-0">
-    <v-card tile color="primary" dark>
+    <v-card tile flat color="primary" dark>
       <v-container>
         <v-row class="fill-height" no-gatters>
           <v-col cols="12" md="6" order-md="2" class="pa-6">
@@ -12,7 +12,7 @@
                   </h2>
                 </div>
 
-                <div :class="{'mt-6': true, 'mb-12': $vuetify.breakpoint.mdAndUp, 'mb-6': $vuetify.breakpoint.smaAndDown}">
+                <div class="mt-6 text-body-1" :class="{'mb-12': $vuetify.breakpoint.mdAndUp, 'mb-6': $vuetify.breakpoint.smaAndDown}">
                   <p>Professeure de français langue étrangère depuis plus de 10 ans, j'enseigne depuis quelques années dans une académie militaire.</p>
                   <p>Je me suis lancée dans l'aventure de la relecture-correction en janvier 2021, je corrige des documents variés (sous-titres de vidéos courtes, scripts de court-métrage, rapports de stage, livres...)</p>
                 </div>

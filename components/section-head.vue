@@ -5,7 +5,7 @@
         <v-col cols="12" md="6" order-md="2" class="pa-6">
           <v-row justify="center">
             <v-col cols="12" lg="9" xl="7">
-              <div :class="{'mt-12': $vuetify.breakpoint.mdAndUp, 'mt-6': $vuetify.breakpoint.smAndDown}">
+              <div :class="{'mt-12': $vuetify.breakpoint.mdAndUp, 'mt-8': $vuetify.breakpoint.smAndDown}">
                 <h1>
                   <span class="text-h4 secondary--text">
                     Hélène Cabillic
@@ -17,13 +17,21 @@
               </div>
 
               <div :class="{'mt-16': $vuetify.breakpoint.mdAndUp, 'mt-6': $vuetify.breakpoint.smAndDown}">
-                <p :class="{'text-h1': $vuetify.breakpoint.mdAndUp, 'text-h3': $vuetify.breakpoint.smAndDown, 'secondary--text': true}">
+                <p :class="{'text-h1': $vuetify.breakpoint.xl, 'text-h2': $vuetify.breakpoint.lg, 'text-h3': $vuetify.breakpoint.smAndDown, 'secondary--text': true}">
                   Correction <span class="avoidwrap">sur mesure</span>
                 </p>
-                <p class="text-h6 mt-6">
+                <p v-if="!light" class="text-h6 mt-6">
                   Confiez moi votre projet !
                 </p>
-                <v-btn depressed light large class="primary--text mt-4" @click="$vuetify.goTo('#section-contact')">
+                <v-btn
+                  v-if="!light"
+                  :nuxt="true"
+                  depressed
+                  light
+                  large
+                  class="primary--text mt-4"
+                  :to="{path: '/', hash: 'section-contact'}"
+                >
                   Demandez un devis
                 </v-btn>
               </div>
@@ -32,7 +40,7 @@
         </v-col>
         <v-col class="pa-0" cols="12" md="6" order-md="1">
           <!--<v-img :src="basePath + 'adult-ge5ee21cb1_1920.jpg'" height="600" />-->
-          <v-img :src="basePath + 'student-gacec86f97_1920.jpg'" :height="$vuetify.breakpoint.mdAndUp ? 600 : 400" />
+          <v-img :src="basePath + 'student-gacec86f97_1920.jpg'" :height="$vuetify.breakpoint.mdAndUp ? (light ? 460 : 600) : 400" />
         </v-col>
       </v-row>
     </v-card>
@@ -41,6 +49,7 @@
 
 <script>
 export default {
+  props: { light: { type: Boolean } },
   computed: {
     basePath () {
       return process.env.basePath

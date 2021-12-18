@@ -16,7 +16,7 @@
           <v-card-title class="text-h5 primary--text">
             Correction simple
           </v-card-title>
-          <v-card-text>
+          <v-card-text class="text-body-1">
             <p>Après vérification et correction, votre texte vous sera rendu sans fautes de :</p>
             <ul>
               <li>grammaire, conjugaison, orthographe</li>
@@ -33,7 +33,7 @@
           <v-card-title class="text-h5 primary--text">
             Correction approfondie
           </v-card-title>
-          <v-card-text>
+          <v-card-text class="text-body-1">
             <p>Il s'agit d'une correction simple à laquelle s'ajoutent :</p>
             <ul>
               <li>une reformulation des passages maladroits</li>

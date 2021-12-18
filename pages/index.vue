@@ -1,18 +1,13 @@
 <template>
   <v-main>
     <navigation-drawer />
+    <navigation-menu />
     <section-head />
     <section-presta />
     <section-me />
     <section-price />
     <section-contact />
-    <v-footer class="mt-16">
-      <v-row>
-        <v-col class="text-center">
-          <v-icon>mdi-copyright</v-icon>&nbsp;2021 - Hélène Cabillic
-        </v-col>
-      </v-row>
-    </v-footer>
+    <section-footer />
   </v-main>
 </template>
 

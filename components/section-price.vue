@@ -16,7 +16,7 @@
           <v-card-title class="primary--text">
             Correction simple
           </v-card-title>
-          <v-card-text>
+          <v-card-text class="text-body-1">
             2 € les 1000 signes, soit environ 3 € par page <span class="avoidwrap">(1 page ≈ 1500 signes)</span>
           </v-card-text>
         </v-card>
@@ -26,7 +26,7 @@
           <v-card-title class="primary--text">
             Correction approfondie
           </v-card-title>
-          <v-card-text>
+          <v-card-text class="text-body-1">
             2,50 € les 1000 signes, soit environ 3,75 € par page
           </v-card-text>
         </v-card>
@@ -36,7 +36,7 @@
           <v-card-title class="primary--text">
             Documents courts (1 page)
           </v-card-title>
-          <v-card-text>
+          <v-card-text class="text-body-1">
             <p>Lettre administrative, lettre de motivation, CV : 10 €</p>
             <p>Lettre de motivation + CV : 16 €</p>
           </v-card-text>
@@ -46,7 +46,7 @@
     <v-row>
       <v-col :class="{'text-caption': true, 'ml-12': $vuetify.breakpoint.mdAndUp}">
         <v-card flat>
-          <v-card-text>
+          <v-card-text class="text-body-1">
             <p class="mb-1">
               Tarifs dégressifs selon volume
             </p>
