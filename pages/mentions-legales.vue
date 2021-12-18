@@ -9,9 +9,9 @@
           <h2 class="text-h3 mt-6">
             Mentions légales
           </h2>
-          <h2 class="text-h5 my-6">
+          <h3 class="text-h5 my-6">
             Éditrice, responsable de la publication
-          </h2>
+          </h3>
           <pre style="white-space: pre-wrap;">
 Hélène Cabillic
 3 Les Noées, 56460 Val d’Oust
@@ -21,9 +21,9 @@ SIRET : 828 548 501 00017
 Code APE : 8559B
     </pre>
 
-          <h2 class="text-h5 my-6">
+          <h3 class="text-h5 my-6">
             Hébergeur
-          </h2>
+          </h3>
           <pre style="white-space: pre-wrap;">
 github
 https://github.com/

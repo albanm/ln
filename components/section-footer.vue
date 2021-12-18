@@ -2,6 +2,9 @@
   <v-footer class="mt-16" color="transparent">
     <v-row>
       <v-col class="text-center" cols="12">
+        <v-btn nuxt to="/cgv" text small>
+          CGV
+        </v-btn>
         <v-btn nuxt to="/mentions-legales" text small>
           mentions légales
         </v-btn>

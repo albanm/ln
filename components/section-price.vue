@@ -48,10 +48,13 @@
         <v-card flat>
           <v-card-text class="text-body-1">
             <p class="mb-1">
-              Tarifs dégressifs selon volume
+              Commande minimale de 10 €.
             </p>
             <p class="mb-1">
-              Tarifs réduits pour les étudiants
+              Tarifs dégressifs selon volume.
+            </p>
+            <p class="mb-1">
+              Tarifs réduits pour les étudiants.
             </p>
             <p>
               Possibilité de commander via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (tarifs majorés pour compenser les frais occasionnés par la
