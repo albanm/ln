@@ -65,7 +65,8 @@ export default {
     treeShake: true,
     defaultAssets: {
       font: {
-        family: 'Merriweather'
+        // family: 'Merriweather'
+        family: 'Nunito'
       },
       icons: 'mdi'
     }
