@@ -17,7 +17,7 @@
               </div>
 
               <div :class="{'mt-16': $vuetify.breakpoint.mdAndUp, 'mt-6': $vuetify.breakpoint.smAndDown}">
-                <p :class="{'text-h1': $vuetify.breakpoint.xl, 'text-h2': $vuetify.breakpoint.lg, 'text-h3': $vuetify.breakpoint.smAndDown, 'secondary--text': true}">
+                <p :class="{'text-h1': $vuetify.breakpoint.xl, 'text-h2': $vuetify.breakpoint.lg, 'text-h3': $vuetify.breakpoint.mdAndDown, 'secondary--text': true}">
                   Correction <span class="avoidwrap">sur mesure</span>
                 </p>
                 <p v-if="!light" class="text-h6 mt-6">
