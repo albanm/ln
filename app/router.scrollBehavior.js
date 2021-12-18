@@ -1,6 +1,6 @@
 // cf https://toor.co/blog/nuxtjs-smooth-scrolling-with-hash-links/
 
-const findEl = async (hash, x) => {
+const findEl = (hash, x) => {
   return document.querySelector(hash) ||
     new Promise((resolve, reject) => {
       if (x > 50) {
