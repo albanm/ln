@@ -1,5 +1,5 @@
 <template>
-  <v-container id="section-price">
+  <v-container id="section-price" class="my-12">
     <v-row>
       <v-col>
         <h2 class="text-h4 primary--text ml-12">
