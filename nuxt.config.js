@@ -43,22 +43,14 @@ export default {
     '@nuxtjs/vuetify'
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/content
-    '@nuxt/content'
-  ],
-
-  // Content module configuration: https://go.nuxtjs.dev/config-content
-  content: {},
-
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
       themes: {
         light: {
-          primary: '#344577'
+          primary: '#344577', // dark blue
+          secondary: '#FBA871' // light orange
         }
       }
     },
