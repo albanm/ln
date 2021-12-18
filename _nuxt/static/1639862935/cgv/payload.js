@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/cgv", {data:[{}],fetch:{},mutations:void 0});
