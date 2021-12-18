@@ -11,7 +11,7 @@
       </v-col>
     </v-row>
     <v-row justify="center">
-      <v-col cols="12" md="4">
+      <v-col cols="12" md="6" lg="4">
         <v-card flat>
           <v-card-title class="text-h5 primary--text">
             Correction simple
@@ -27,8 +27,8 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="12" md="2" class="pa-0" />
-      <v-col cols="12" md="4">
+      <v-col v-if="$vuetify.breakpoint.lgAndUp" cols="12" lg="2" />
+      <v-col cols="12" md="6" lg="4">
         <v-card flat>
           <v-card-title class="text-h5 primary--text">
             Correction approfondie
