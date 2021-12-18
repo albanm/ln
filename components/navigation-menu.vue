@@ -2,7 +2,7 @@
   <v-menu>
     <template #activator="{attrs, on}">
       <v-btn
-        v-if="$vuetify.breakpoint.smAndDown"
+        v-if="$vuetify.breakpoint.mdAndDown"
         v-bind="attrs"
         fab
         style="top: 8px;right: 8px;"

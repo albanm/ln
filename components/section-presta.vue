@@ -27,7 +27,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="12" md="2" />
+      <v-col cols="12" md="2" class="pa-0" />
       <v-col cols="12" md="4">
         <v-card flat>
           <v-card-title class="text-h5 primary--text">

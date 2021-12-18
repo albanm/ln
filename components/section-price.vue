@@ -1,5 +1,5 @@
 <template>
-  <v-container id="section-price" class="my-12">
+  <v-container id="section-price" class="mt-12 mb-8">
     <v-row>
       <v-col>
         <h2 class="text-h4 primary--text ml-12">
@@ -34,7 +34,7 @@
       <v-col cols="12" md="4">
         <v-card flat>
           <v-card-title class="primary--text">
-            Documents courts (1 page)
+            Documents courts <span class="avoidwrap">(1 page)</span>
           </v-card-title>
           <v-card-text class="text-body-1">
             <p>Lettre administrative, lettre de motivation, CV : 10 €</p>

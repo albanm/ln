@@ -19,7 +19,7 @@
               </v-col>
             </v-row>
           </v-col>
-          <v-col class="pa-6" cols="12" md="6" order-md="1" align-self="center">
+          <v-col class="pt-6 pb-16" cols="12" md="6" order-md="1" align-self="center">
             <v-row justify="center">
               <v-avatar width="200" height="200">
                 <v-img :src="basePath + 'profile.png'" />
