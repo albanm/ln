@@ -37,7 +37,7 @@
             <p>Il s'agit d'une correction simple à laquelle s'ajoutent :</p>
             <ul>
               <li>une reformulation des passages maladroits</li>
-              <li>une vérification et correction d'éléments fatuels (noms propres, dates, géographie...)</li>
+              <li>une vérification et correction d'éléments factuels (noms propres, dates, géographie...)</li>
             </ul>
           </v-card-text>
         </v-card>
