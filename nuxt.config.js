@@ -8,16 +8,23 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - ln',
-    title: 'Hélène Cabillic - Correctrice',
+    titleTemplate: 'Hélène Cabillic - %s',
+    title: 'Correctrice',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'fr'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Correction sur mesure, confiez-moi votre projet !' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'og:title', content: 'Hélène Cabillic - Correctrice' },
+      { name: 'og:description', content: 'Correction sur mesure, confiez-moi votre projet !' },
+      { name: 'og:type', content: 'profile' },
+      { name: 'og:url', content: 'https://helenecabillic.fr' },
+      { name: 'og:image', content: 'https://helenecabillic.fr/profile.png' },
+      { name: 'thumbnail', content: 'https://helenecabillic.fr/profile.png' },
+      { name: 'og:locale', content: 'fr_FR' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

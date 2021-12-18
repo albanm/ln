@@ -22,7 +22,7 @@
           <v-col class="pa-6" cols="12" md="6" order-md="1" align-self="center">
             <v-row justify="center">
               <v-avatar width="200" height="200">
-                <v-img :src="basePath + '20190430_145301_2.png'" />
+                <v-img :src="basePath + 'profile.png'" />
               </v-avatar>
             </v-row>
           </v-col>

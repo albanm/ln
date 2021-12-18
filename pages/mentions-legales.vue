@@ -39,7 +39,9 @@ https://github.com/
 
 <script>
 export default {
-
+  head: {
+    title: 'Mentions légales'
+  }
 }
 </script>
 
