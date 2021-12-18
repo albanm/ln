@@ -38,9 +38,8 @@
             </v-col>
           </v-row>
         </v-col>
-        <v-col class="pa-0" cols="12" md="6" order-md="1">
-          <!--<v-img :src="basePath + 'adult-ge5ee21cb1_1920.jpg'" height="600" />-->
-          <v-img :src="basePath + 'student-gacec86f97_1920.jpg'" :height="$vuetify.breakpoint.mdAndUp ? (light ? 460 : 600) : 400" />
+        <v-col v-if="$vuetify.breakpoint.mdAndUp || !light" class="pa-0" cols="12" md="6" order-md="1">
+          <v-img :src="basePath + 'student-gacec86f97_1920.jpg'" :height="$vuetify.breakpoint.mdAndUp && !light ? 560 : 400" />
         </v-col>
       </v-row>
     </v-card>
