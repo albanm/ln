@@ -14,12 +14,19 @@
 
                 <div class="mt-6 text-body-1" :class="{'mb-12': $vuetify.breakpoint.mdAndUp, 'mb-6': $vuetify.breakpoint.smaAndDown}">
                   <p>Professeure de français langue étrangère depuis plus de 10 ans, j'enseigne depuis quelques années dans une académie militaire.</p>
-                  <p>Je me suis lancée dans l'aventure de la relecture-correction en janvier 2021, je corrige des documents variés (sous-titres de vidéos courtes, scripts de court-métrage, rapports de stage, livres...)</p>
+                  <p>Je me suis lancée dans l'aventure de la relecture-correction en janvier 2021. Je corrige des documents variés (sous-titres de vidéos courtes, scripts de court-métrage, rapports de stage, livres...)</p>
                 </div>
               </v-col>
             </v-row>
           </v-col>
-          <v-col class="pt-6 pb-16" cols="12" md="6" order-md="1" align-self="center">
+          <v-col
+            class="pt-6"
+            :class="{'pb-16': $vuetify.breakpoint.smAndDown, 'pb-6': '$vuetify.breakpoint.mdAndUp'}"
+            cols="12"
+            md="6"
+            order-md="1"
+            align-self="center"
+          >
             <v-row justify="center">
               <v-avatar width="200" height="200">
                 <v-img :src="basePath + 'profile.png'" />
