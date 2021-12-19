@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="mt-6 mb-12 contact-links text-body-1">
-                  <p>Pour demander un devis ou simplement obtenir plus d'informations, n'hésitez pas à me contacter.</p>
+                  <p>Une question ? Une demande de devis ? Contactez-moi :</p>
                   <p><v-icon>mdi-email</v-icon>&nbsp;<a href="mailto:hcabillic@gmail.com">hcabillic@gmail.com</a></p>
                   <p><v-icon>mdi-linkedin</v-icon>&nbsp;<a target="_blank" href="https://www.linkedin.com/in/h%C3%A9l%C3%A8ne-cabillic-baa2a6140">Linkedin</a></p>
                   <p style="position: relative;">
