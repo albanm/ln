@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/5euros-image", {data:[{}],fetch:{},mutations:void 0});
