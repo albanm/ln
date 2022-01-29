@@ -52,7 +52,8 @@
             <p class="mb-1">
               {{ $t('notes3') }}
             </p>
-            <p v-html="$t('notes4')" />
+            <p class="mb-1" v-html="$t('notes4')" />
+            <p v-html="$t('notes5')" />
           </v-card-text>
         </v-card>
       </v-col>
@@ -73,7 +74,8 @@ fr:
   notes1: Commande minimale de 10 €.
   notes2: Tarifs dégressifs selon volume.
   notes3: Tarifs réduits pour les étudiants.
-  notes4: Possibilité de commander via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (tarifs majorés pour compenser les frais occasionnés par la plateforme).
+  notes4: Possibilité de commander via <a href="https://5euros.com/profil/helenecabillic">5euros.com</a>.
+  notes5: Possibilité de commander via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (tarifs majorés pour compenser les frais occasionnés par la plateforme).
 en:
   prices: Prices
   simple: Simple correction
@@ -86,7 +88,8 @@ en:
   notes1: Minimum order of 10 €.
   notes2: Decreasing rates according to volume.
   notes3: Reduced rates for students.
-  notes4: Ability to order via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (increased rates to compensate for fees incurred by the platform).
+  notes4: Ability to order via <a href="https://5euros.com/profil/helenecabillic">5euros.com</a>.
+  notes5: Ability to order via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (increased rates to compensate for fees incurred by the platform).
 </i18n>
 
 <script>

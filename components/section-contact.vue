@@ -36,7 +36,7 @@
                   </p>
                   <p style="position: relative;">
                     <img width="24" height="24" style="position: absolute;" :src="basePath + '5euros.png'">
-                    <span style="padding-left: 30px;"><a target="_blank" href="https://5euros.com/profil/helenecabillic">5euros</a></span>
+                    <span style="padding-left: 30px;"><a target="_blank" href="https://5euros.com/profil/helenecabillic">5euros.com</a></span>
                     <br><span style="padding-left: 30px;" class="caption">{{ $t('5eurosNote') }}</span>
                   </p>
                 </div>
