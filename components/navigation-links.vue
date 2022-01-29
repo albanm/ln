@@ -57,6 +57,15 @@
         {{ $t('contact') }}
       </v-list-item-title>
     </v-list-item>
+
+    <v-list-item nuxt @click="$i18n.setLocale($i18n.locale === 'en' ? 'fr' : 'en')">
+      <v-list-item-icon>
+        {{ $i18n.locale === 'en' ? 'FR' : 'EN' }}
+      </v-list-item-icon>
+      <v-list-item-title class="primary--text">
+        {{ $i18n.locale === 'en' ? 'Consulter en français' : 'Read in english' }}
+      </v-list-item-title>
+    </v-list-item>
   </v-list>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
   <v-container id="section-head" fluid class="pa-0">
-    <lang-switcher />
     <v-card tile color="primary" dark>
       <v-row class="fill-height" no-gutters>
         <v-col cols="12" md="6" order-md="2" class="pa-6">
@@ -25,8 +24,9 @@
                 <v-btn
                   v-if="!light"
                   :nuxt="true"
-                  depressed
                   light
+                  depressed
+                  color="white"
                   large
                   class="primary--text mt-4"
                   :to="{path: '/', hash: 'section-contact'}"
