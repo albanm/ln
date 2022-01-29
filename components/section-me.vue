@@ -8,13 +8,13 @@
               <v-col cols="12" lg="8">
                 <div :class="{'mt-12': $vuetify.breakpoint.mdAndUp, 'mt-6': $vuetify.breakpoint.smAndDown, 'mb-6': true}">
                   <h2 class="text-h4 secondary--text">
-                    Qui suis-je ?
+                    {{ $t('whoAmI') }}
                   </h2>
                 </div>
 
                 <div class="mt-6 text-body-1" :class="{'mb-12': $vuetify.breakpoint.mdAndUp, 'mb-6': $vuetify.breakpoint.smaAndDown}">
-                  <p>Professeure de français langue étrangère depuis plus de 10 ans, j'enseigne depuis quelques années dans une académie militaire.</p>
-                  <p>Je me suis lancée dans l'aventure de la relecture-correction en janvier 2021. Je corrige des documents variés (sous-titres de vidéos courtes, scripts de court-métrage, rapports de stage, livres...)</p>
+                  <p>{{ $t('me1') }}</p>
+                  <p>{{ $t('me2') }}</p>
                 </div>
               </v-col>
             </v-row>
@@ -38,6 +38,17 @@
     </v-card>
   </v-container>
 </template>
+
+<i18n lang="yaml">
+fr:
+  whoAmI: Qui suis-je ?
+  me1: Professeure de français langue étrangère depuis plus de 10 ans, j'enseigne depuis quelques années dans une académie militaire.
+  me2: Je me suis lancée dans l'aventure de la relecture-correction en janvier 2021. Je corrige des documents variés (sous-titres de vidéos courtes, scripts de court-métrage, rapports de stage, livres...)
+en:
+  whoAmI: Who am I
+  me1: I have been teaching French as a foreign language for more than 10 years, and for the past few years I have been teaching in a military academy.
+  me2: I started proofreading in January 2021. I proofread various documents (subtitles of short videos, short film scripts, internship reports, books...)
+</i18n>
 
 <script>
 export default {

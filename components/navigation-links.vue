@@ -1,28 +1,28 @@
 <template>
   <v-list>
-    <v-list-item nuxt :to="{path: '/', hash: 'section-head'}">
+    <v-list-item nuxt :to="localePath({path: '/', hash: 'section-head'})">
       <v-list-item-icon>
         <v-icon color="primary">
           mdi-home
         </v-icon>
       </v-list-item-icon>
       <v-list-item-title class="primary--text">
-        Accueil
+        {{ $t('welcome') }}
       </v-list-item-title>
     </v-list-item>
 
-    <v-list-item nuxt :to="{path: '/', hash: 'section-presta'}">
+    <v-list-item nuxt :to="localePath({path: '/', hash: 'section-presta'})">
       <v-list-item-icon>
         <v-icon color="primary">
           mdi-text-box-check
         </v-icon>
       </v-list-item-icon>
       <v-list-item-title class="primary--text">
-        Prestations
+        {{ $t('services') }}
       </v-list-item-title>
     </v-list-item>
 
-    <v-list-item nuxt :to="{path: '/', hash: 'section-me'}">
+    <v-list-item nuxt :to="localePath({path: '/', hash: 'section-me'})">
       <v-list-item-icon>
         <v-icon color="primary">
           mdi-account
@@ -32,33 +32,49 @@
               <v-img :src="basePath + '20190430_145301_2.png'" />
             </v-list-item-avatar>-->
       <v-list-item-title class="primary--text">
-        Qui suis-je
+        {{ $t('whoAmI') }}
       </v-list-item-title>
     </v-list-item>
 
-    <v-list-item nuxt :to="{path: '/', hash: 'section-price'}">
+    <v-list-item nuxt :to="localePath({path: '/', hash: 'section-price'})">
       <v-list-item-icon>
         <v-icon color="primary">
           mdi-currency-eur
         </v-icon>
       </v-list-item-icon>
       <v-list-item-title class="primary--text">
-        Tarifs
+        {{ $t('prices') }}
       </v-list-item-title>
     </v-list-item>
 
-    <v-list-item nuxt :to="{path: '/', hash: 'section-contact'}">
+    <v-list-item nuxt :to="localePath({path: '/', hash: 'section-contact'})">
       <v-list-item-icon>
         <v-icon color="primary">
           mdi-send
         </v-icon>
       </v-list-item-icon>
       <v-list-item-title class="primary--text">
-        Contact
+        {{ $t('contact') }}
       </v-list-item-title>
     </v-list-item>
   </v-list>
 </template>
+
+<i18n lang="yaml">
+fr:
+  welcome: Accueil
+  services: Prestations
+  whoAmI: Qui suis-je ?
+  prices: Tarifs
+  contact: Contact
+en:
+  welcome: Welcome
+  services: Services
+  whoAmI: Who am I
+  prices: Prices
+  contact: Contact
+
+</i18n>
 
 <script>
 export default {

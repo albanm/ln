@@ -22,6 +22,8 @@ export async function scrollToHash (hash, smooth = true) {
 
 export default function (to, from, savedPosition) {
   if (savedPosition) { return savedPosition }
-  if (to.hash) { return scrollToHash(to.hash) }
+  const fromLocale = from.name.split('_').pop()
+  const toLocale = to.name.split('_').pop()
+  if (fromLocale === toLocale && to.hash) { return scrollToHash(to.hash) }
   return { x: 0, y: 0 }
 }

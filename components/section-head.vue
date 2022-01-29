@@ -1,5 +1,6 @@
 <template>
   <v-container id="section-head" fluid class="pa-0">
+    <lang-switcher />
     <v-card tile color="primary" dark>
       <v-row class="fill-height" no-gutters>
         <v-col cols="12" md="6" order-md="2" class="pa-6">
@@ -11,17 +12,15 @@
                     Hélène Cabillic
                   </span>
                   <span class="text-body-1 primary--text text--lighten-5">
-                    Correctrice
+                    {{ $t('job') }}
                   </span>
                 </h1>
               </div>
 
               <div :class="{'mt-16': $vuetify.breakpoint.mdAndUp, 'mt-6': $vuetify.breakpoint.smAndDown}">
-                <p :class="{'text-h1': $vuetify.breakpoint.xl, 'text-h2': $vuetify.breakpoint.lg, 'text-h3': $vuetify.breakpoint.mdAndDown, 'secondary--text': true}">
-                  Correction <span class="avoidwrap">sur mesure</span>
-                </p>
+                <p :class="{'text-h1': $vuetify.breakpoint.xl, 'text-h2': $vuetify.breakpoint.lg, 'text-h3': $vuetify.breakpoint.mdAndDown, 'secondary--text': true}" v-html="$t('title1')" />
                 <p v-if="!light" class="text-h6 mt-6">
-                  Confiez moi votre projet !
+                  {{ $t('title2') }}
                 </p>
                 <v-btn
                   v-if="!light"
@@ -32,7 +31,7 @@
                   class="primary--text mt-4"
                   :to="{path: '/', hash: 'section-contact'}"
                 >
-                  Demandez un devis
+                  {{ $t('askQuote') }}
                 </v-btn>
               </div>
             </v-col>
@@ -45,6 +44,19 @@
     </v-card>
   </v-container>
 </template>
+
+<i18n lang="yaml">
+fr:
+  job: Correctrice
+  title1: Correction <span class="avoidwrap">sur mesure</span>
+  title2: Confiez moi votre projet !
+  askQuote: Demandez un devis
+en:
+  job: Proofreader
+  title1: French proofreading
+  title2: Trust me with your project!
+  askQuote: Ask for a quote
+</i18n>
 
 <script>
 export default {

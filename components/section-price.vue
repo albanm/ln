@@ -6,7 +6,7 @@
           <v-icon color="primary" large class="mb-1">
             mdi-currency-eur
           </v-icon>
-          Tarifs
+          {{ $t('prices') }}
         </h2>
       </v-col>
     </v-row>
@@ -14,31 +14,27 @@
       <v-col cols="12" md="4">
         <v-card flat>
           <v-card-title class="primary--text">
-            Correction simple
+            {{ $t('simple') }}
           </v-card-title>
-          <v-card-text class="text-body-1">
-            2 € les 1000 signes, soit environ 3 € par page <span class="avoidwrap">(1 page ≈ 1500 signes)</span>
-          </v-card-text>
+          <v-card-text class="text-body-1" v-html="$t('simple1')" />
         </v-card>
       </v-col>
       <v-col cols="12" md="4">
         <v-card flat>
           <v-card-title class="primary--text">
-            Correction approfondie
+            {{ $t('deep') }}
           </v-card-title>
           <v-card-text class="text-body-1">
-            2,50 € les 1000 signes, soit environ 3,75 € par page
+            {{ $t('deep1') }}
           </v-card-text>
         </v-card>
       </v-col>
       <v-col cols="12" md="4">
         <v-card flat>
-          <v-card-title class="primary--text">
-            Documents courts <span class="avoidwrap">(1 page)</span>
-          </v-card-title>
+          <v-card-title class="primary--text" v-html="$t('shortDoc')" />
           <v-card-text class="text-body-1">
-            <p>Lettre administrative, lettre de motivation, CV : 10 €</p>
-            <p>Lettre de motivation + CV : 16 €</p>
+            <p>{{ $t('shortDoc1') }}</p>
+            <p>{{ $t('shortDoc2') }}</p>
           </v-card-text>
         </v-card>
       </v-col>
@@ -48,24 +44,50 @@
         <v-card flat>
           <v-card-text class="text-body-1">
             <p class="mb-1">
-              Commande minimale de 10 €.
+              {{ $t('notes1') }}
             </p>
             <p class="mb-1">
-              Tarifs dégressifs selon volume.
+              {{ $t('notes2') }}
             </p>
             <p class="mb-1">
-              Tarifs réduits pour les étudiants.
+              {{ $t('notes3') }}
             </p>
-            <p>
-              Possibilité de commander via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (tarifs majorés pour compenser les frais occasionnés par la
-              plateforme).
-            </p>
+            <p v-html="$t('notes4')" />
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
   </v-container>
 </template>
+
+<i18n lang="yaml">
+fr:
+  prices: Tarifs
+  simple: Correction simple
+  simple1: 2 € les 1000 signes, soit environ 3 € par page <span class="avoidwrap">(1 page ≈ 1500 signes)</span>
+  deep: Correction approfondie
+  deep1: 2,50 € les 1000 signes, soit environ 3,75 € par page
+  shortDoc: Documents courts&nbsp;<span class="avoidwrap">(1 page)</span>
+  shortDoc1: "Lettre administrative, lettre de motivation, CV : 10 €"
+  shortDoc2: "Lettre de motivation + CV : 16 €"
+  notes1: Commande minimale de 10 €.
+  notes2: Tarifs dégressifs selon volume.
+  notes3: Tarifs réduits pour les étudiants.
+  notes4: Possibilité de commander via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (tarifs majorés pour compenser les frais occasionnés par la plateforme).
+en:
+  prices: Prices
+  simple: Simple correction
+  simple1: 2 € per 1000 signs, or about 3 € per page <span class="avoidwrap">(1 page ≈ 1500 signs)</span>
+  deep: In-depth correction
+  deep1: 2,50 € per 1000 characters, i.e. approximately 3,75 € per page
+  shortDoc: Short documents&nbsp;<span class="avoidwrap">(1 page)</span>
+  shortDoc1: "Administrative letter, cover letter, CV (french resume): 10 €."
+  shortDoc2: "Cover letter + CV: 16 €."
+  notes1: Minimum order of 10 €.
+  notes2: Decreasing rates according to volume.
+  notes3: Reduced rates for students.
+  notes4: Ability to order via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (increased rates to compensate for fees incurred by the platform).
+</i18n>
 
 <script>
 export default {
