@@ -59,7 +59,7 @@
     </v-list-item>
 
     <v-list-item nuxt @click="$i18n.setLocale($i18n.locale === 'en' ? 'fr' : 'en')">
-      <v-list-item-icon>
+      <v-list-item-icon class="primary--text">
         {{ $i18n.locale === 'en' ? 'FR' : 'EN' }}
       </v-list-item-icon>
       <v-list-item-title class="primary--text">
