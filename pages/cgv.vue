@@ -142,7 +142,10 @@
 <script>
 export default {
   head: {
-    title: 'CGV'
+    title: 'CGV',
+    meta: [
+      { name: 'robots', content: 'noindex' }
+    ]
   }
 }
 </script>
