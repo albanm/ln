@@ -74,7 +74,7 @@ fr:
   notes1: Commande minimale de 10 €.
   notes2: Tarifs dégressifs selon volume.
   notes3: Tarifs réduits pour les étudiants.
-  notes4: Possibilité de commander via <a href="https://5euros.com/profil/helenecabillic">5euros.com</a>.
+  notes4: Possibilité de commander via <a href="https://5euros.com/service/260910/corriger-500-mots-1">5euros.com</a>.
   notes5: Possibilité de commander via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (tarifs majorés pour compenser les frais occasionnés par la plateforme).
 en:
   prices: Prices
@@ -88,7 +88,7 @@ en:
   notes1: Minimum order of 10 €.
   notes2: Decreasing rates according to volume.
   notes3: Reduced rates for students.
-  notes4: Ability to order via <a href="https://5euros.com/profil/helenecabillic">5euros.com</a>.
+  notes4: Ability to order via <a href="https://5euros.com/service/260910/corriger-500-mots-1">5euros.com</a>.
   notes5: Ability to order via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (increased rates to compensate for fees incurred by the platform).
 </i18n>
 
