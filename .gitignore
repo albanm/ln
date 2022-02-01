@@ -90,3 +90,6 @@ sw.*
 *.swp
 
 *.xcf
+
+assets/css/
+assets/fonts/

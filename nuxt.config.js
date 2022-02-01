@@ -7,32 +7,37 @@ export default {
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    titleTemplate: 'Hélène Cabillic - %s',
-    title: 'Correctrice',
-    htmlAttrs: {
-      lang: 'fr'
-    },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Correction sur mesure, confiez-moi votre projet !' },
-      { name: 'format-detection', content: 'telephone=no' },
-      { name: 'og:title', content: 'Hélène Cabillic - Correctrice' },
-      { name: 'og:description', content: 'Correction sur mesure, confiez-moi votre projet !' },
-      { name: 'og:type', content: 'profile' },
-      { name: 'og:url', content: 'https://helenecabillic.fr' },
-      { name: 'og:image', content: 'https://helenecabillic.fr/profile.png' },
-      { name: 'thumbnail', content: 'https://helenecabillic.fr/profile.png' },
-      { name: 'og:locale', content: 'fr_FR' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+  head () {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
+    return {
+      titleTemplate: 'Hélène Cabillic - %s',
+      title: 'Correctrice',
+      htmlAttrs: {
+        ...i18nHead.htmlAttrs
+      },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Correction sur mesure, confiez-moi votre projet !' },
+        { name: 'format-detection', content: 'telephone=no' },
+        { name: 'og:title', content: 'Hélène Cabillic - Correctrice' },
+        { name: 'og:description', content: 'Correction sur mesure, confiez-moi votre projet !' },
+        { name: 'og:type', content: 'profile' },
+        { name: 'og:url', content: 'https://helenecabillic.fr' },
+        { name: 'og:image', content: 'https://helenecabillic.fr/profile.png' },
+        { name: 'thumbnail', content: 'https://helenecabillic.fr/profile.png' },
+        ...i18nHead.meta
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        ...i18nHead.link
+      ]
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@mdi/font/css/materialdesignicons.min.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -45,9 +50,16 @@ export default {
   modules: ['@nuxtjs/i18n'],
 
   i18n: {
-    locales: ['fr', 'en'],
+    locales: [{ code: 'fr', iso: 'fr-FR' }, { code: 'en', iso: 'en-EN' }],
     defaultLocale: 'fr',
-    vueI18nLoader: true
+    vueI18nLoader: true,
+    detectBrowserLanguage: {
+      ballbackLocale: 'fr'
+    },
+    baseUrl: 'https://helenecabillic.fr',
+    vueI18n: {
+      fallbackLocale: 'fr'
+    }
   },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
@@ -55,7 +67,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+    ['@nuxtjs/google-fonts', { download: true, display: 'swap', families: { Nunito: [100, 300, 400, 500, 700, 900] } }]
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -71,13 +84,7 @@ export default {
       }
     },
     treeShake: true,
-    defaultAssets: {
-      font: {
-        // family: 'Merriweather'
-        family: 'Nunito'
-      },
-      icons: 'mdi'
-    }
+    defaultAssets: false
   },
 
   router: {
