@@ -53,9 +53,8 @@ export default {
     locales: [{ code: 'fr', iso: 'fr-FR' }, { code: 'en', iso: 'en-EN' }],
     defaultLocale: 'fr',
     vueI18nLoader: true,
-    detectBrowserLanguage: {
-      ballbackLocale: 'fr'
-    },
+    // disabled because redirections are not great for google indexing
+    detectBrowserLanguage: false,
     baseUrl: 'https://helenecabillic.fr',
     vueI18n: {
       fallbackLocale: 'fr'
