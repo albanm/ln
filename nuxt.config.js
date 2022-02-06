@@ -8,13 +8,10 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head () {
-    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
-    return {
+    const head = {
       titleTemplate: 'Hélène Cabillic - %s',
       title: 'Correctrice',
-      htmlAttrs: {
-        ...i18nHead.htmlAttrs
-      },
+      htmlAttrs: {},
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,14 +22,21 @@ export default {
         { name: 'og:type', content: 'profile' },
         { name: 'og:url', content: 'https://helenecabillic.fr' },
         { name: 'og:image', content: 'https://helenecabillic.fr/profile.png' },
-        { name: 'thumbnail', content: 'https://helenecabillic.fr/profile.png' },
-        ...i18nHead.meta
+        { name: 'thumbnail', content: 'https://helenecabillic.fr/profile.png' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        ...i18nHead.link
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     }
+
+    if (this.$nuxtI18nHead) {
+      const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
+      head.htmlAttrs = { ...head.htmlAttrs, ...i18nHead.htmlAttrs }
+      head.meta = [...head.meta, ...i18nHead.meta]
+      head.link = [...head.link, ...i18nHead.link]
+    }
+
+    return head
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
