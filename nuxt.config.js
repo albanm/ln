@@ -66,6 +66,7 @@ export default {
   },
 
   sitemap: {
+    hostname: 'https://helenecabillic.fr',
     filter ({ routes }) {
       return routes.filter((route) => {
         if (route.path.endsWith('-image')) { return false }
