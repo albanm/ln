@@ -15,7 +15,7 @@
           <pre style="white-space: pre-wrap;">
 Hélène Cabillic
 3 Les Noées, 56460 Val d’Oust
-E-mail : hcabillic@gmail.com
+E-mail : contact@helenecabillic.fr
 Forme juridique : micro-entreprise
 SIRET : 828 548 501 00017
 Code APE : 8559B
