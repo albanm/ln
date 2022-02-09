@@ -51,7 +51,7 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/sitemap'],
 
   i18n: {
     locales: [{ code: 'fr', iso: 'fr-FR' }, { code: 'en', iso: 'en-EN' }],
@@ -62,6 +62,17 @@ export default {
     baseUrl: 'https://helenecabillic.fr',
     vueI18n: {
       fallbackLocale: 'fr'
+    }
+  },
+
+  sitemap: {
+    filter ({ routes }) {
+      return routes.filter((route) => {
+        if (route.path.endsWith('-image')) { return false }
+        if (route.path.endsWith('cgv')) { return false }
+        if (route.path === '/en/mentions-legales') { return false }
+        return true
+      })
     }
   },
 
