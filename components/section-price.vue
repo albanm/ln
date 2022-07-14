@@ -2,14 +2,14 @@
   <v-container id="section-price" class="mt-12 mb-8">
     <v-row>
       <v-col>
-        <h2 class="text-h4 primary--text ml-12">
+        <h2 class="text-h4 primary--text ml-md-12">
           <v-icon color="primary" large class="mb-1">
             mdi-currency-eur
           </v-icon>
           {{ $t('prices') }}
         </h2>
         <v-card flat>
-          <v-card-text class="ml-12 pb-0 text-body-1">
+          <v-card-text class="ml-md-12 pb-0 text-body-1">
             {{ $t('subtitle') }}
           </v-card-text>
         </v-card>
@@ -77,7 +77,7 @@ fr:
   shortDoc1: "Lettre administrative, lettre de motivation, CV : 10 €"
   shortDoc2: "Lettre de motivation + CV : 16 €"
   notes1: Commande minimale de 10 €.
-  notes2: Tarifs dégressifs selon volume.
+  notes2: Tarifs dégressifs selon le volume.
   notes3: Tarifs réduits pour les étudiants.
   notes4: Possibilité de commander via <a href="https://5euros.com/service/260910/corriger-500-mots-1">5euros.com</a>.
   notes5: Possibilité de commander via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (tarifs majorés pour compenser les frais occasionnés par la plateforme).

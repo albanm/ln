@@ -2,14 +2,14 @@
   <v-container id="section-presta" class="my-12">
     <v-row>
       <v-col>
-        <h2 class="text-h4 primary--text ml-12">
+        <h2 class="text-h4 primary--text ml-md-12">
           <v-icon color="primary" large class="mb-1">
             mdi-text-box-check
           </v-icon>
           {{ $t('presta') }}
         </h2>
         <v-card flat>
-          <v-card-text class="ml-12 pb-0 text-body-1">
+          <v-card-text class="ml-md-12 pb-0 text-body-1">
             {{ $t('subtitle') }}
           </v-card-text>
         </v-card>
@@ -57,7 +57,7 @@ fr:
   presta: Prestations
   subtitle: Je corrige des documents variés (sous-titres de vidéos courtes, scripts de courts-métrages, rapports de stage, romans, essais, etc.)
   simple: Correction
-  simple1: "Après vérification et correction, votre texte vous sera rendu sans fautes de :"
+  simple1: "Après vérification et correction, votre texte vous sera rendu sans erreur de :"
   simple2: grammaire, conjugaison, orthographe
   simple3: typographie
   simple4: syntaxe

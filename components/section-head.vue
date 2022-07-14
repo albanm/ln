@@ -49,7 +49,7 @@
 fr:
   job: Correctrice
   title1: Correction <span class="avoidwrap">sur mesure</span>
-  title2: Confiez moi votre projet !
+  title2: Confiez-moi votre projet !
   askQuote: Demandez un devis
 en:
   job: Proofreader
