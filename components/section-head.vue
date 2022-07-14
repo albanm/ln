@@ -29,7 +29,7 @@
                   color="white"
                   large
                   class="primary--text mt-4"
-                  :to="{path: '/', hash: 'section-contact'}"
+                  :to="{hash: 'section-contact'}"
                 >
                   {{ $t('askQuote') }}
                 </v-btn>

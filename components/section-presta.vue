@@ -8,6 +8,11 @@
           </v-icon>
           {{ $t('presta') }}
         </h2>
+        <v-card flat>
+          <v-card-text class="ml-12 pb-0 text-body-1">
+            {{ $t('subtitle') }}
+          </v-card-text>
+        </v-card>
       </v-col>
     </v-row>
     <v-row justify="center">
@@ -23,6 +28,7 @@
               <li>{{ $t('simple3') }}</li>
               <li>{{ $t('simple4') }}</li>
               <li>{{ $t('simple5') }}</li>
+              <li>{{ $t('simple6') }}</li>
             </ul>
           </v-card-text>
         </v-card>
@@ -49,28 +55,33 @@
 <i18n lang="yaml">
 fr:
   presta: Prestations
-  simple: Correction simple
+  subtitle: Je corrige des documents variés (sous-titres de vidéos courtes, scripts de courts-métrages, rapports de stage, romans, essais, etc.)
+  simple: Correction
   simple1: "Après vérification et correction, votre texte vous sera rendu sans fautes de :"
   simple2: grammaire, conjugaison, orthographe
   simple3: typographie
   simple4: syntaxe
   simple5: sémantique
-  deep: Correction approfondie
-  deep1: "Il s'agit d'une correction simple à laquelle s'ajoutent :"
+  simple6: vérification et correction d'éléments factuels (noms propres, dates, géographie, etc.)
+  deep: Réécriture
+  deep1: "À la correction peut s'ajouter :"
   deep2: une reformulation des passages maladroits
-  deep3: une vérification et correction d'éléments factuels (noms propres, dates, géographie...)
+  deep3: "une mise en forme de texte brut (par exemple : retranscription audio)"
 en:
   presta: Services
-  simple: Simple correction
+  subtitle: I proofread various documents (subtitles of short videos, short film scripts, internship reports, books...)
+  simple: Proofreading
   simple1: "After verification and correction, your text will be returned to you without errors of :"
   simple2: grammar, conjugation, spelling
   simple3: typography
   simple4: syntax
   simple5: semantic
-  deep: In-depth correction
-  deep1: "This is a simple correction to which are added :"
+  simple6: verification and correction of factual elements (proper nouns, dates, geography...)
+  deep: Rewriting
+  deep1: "This is a proofreading to which are added :"
   deep2: rewording of awkward passages
-  deep3: verification and correction of factual elements (proper nouns, dates, geography...)
+  deep3: "formatting of raw text (for example: audio transcription)"
+
 </i18n>
 
 <script>

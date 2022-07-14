@@ -8,6 +8,11 @@
           </v-icon>
           {{ $t('prices') }}
         </h2>
+        <v-card flat>
+          <v-card-text class="ml-12 pb-0 text-body-1">
+            {{ $t('subtitle') }}
+          </v-card-text>
+        </v-card>
       </v-col>
     </v-row>
     <v-row>
@@ -52,7 +57,6 @@
             <p class="mb-1">
               {{ $t('notes3') }}
             </p>
-            <p class="mb-1" v-html="$t('notes4')" />
             <p v-html="$t('notes5')" />
           </v-card-text>
         </v-card>
@@ -64,11 +68,12 @@
 <i18n lang="yaml">
 fr:
   prices: Tarifs
-  simple: Correction simple
+  subtitle: Voici, à titre indicatif, les prix que je peux pratiquer. Dans tous les cas, pour chaque demande, un devis sur mesure doit être établi.
+  simple: Correction
   simple1: 2 € les 1000 signes, soit environ 3 € par page <span class="avoidwrap">(1 page ≈ 1500 signes)</span>
-  deep: Correction approfondie
-  deep1: 2,50 € les 1000 signes, soit environ 3,75 € par page
-  shortDoc: Documents courts&nbsp;<span class="avoidwrap">(1 page)</span>
+  deep: Réécriture
+  deep1: 3 € les 1000 signes, soit environ 4,5 € par page
+  shortDoc: Correction rapide&nbsp;<span class="avoidwrap">(1 page)</span>
   shortDoc1: "Lettre administrative, lettre de motivation, CV : 10 €"
   shortDoc2: "Lettre de motivation + CV : 16 €"
   notes1: Commande minimale de 10 €.
@@ -78,11 +83,12 @@ fr:
   notes5: Possibilité de commander via <a href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a> (tarifs majorés pour compenser les frais occasionnés par la plateforme).
 en:
   prices: Prices
-  simple: Simple correction
+  subtitle: Here are some prices as an indication. In any case, for each request, a personal quote must be done.
+  simple: Proofreading
   simple1: 2 € per 1000 signs, or about 3 € per page <span class="avoidwrap">(1 page ≈ 1500 signs)</span>
-  deep: In-depth correction
-  deep1: 2,50 € per 1000 characters, i.e. approximately 3,75 € per page
-  shortDoc: Short documents&nbsp;<span class="avoidwrap">(1 page)</span>
+  deep: Rewriting
+  deep1: 3 € per 1000 characters, i.e. approximately 4,5 € per page
+  shortDoc: Short proofreading&nbsp;<span class="avoidwrap">(1 page)</span>
   shortDoc1: "Administrative letter, cover letter, CV (french resume): 10 €."
   shortDoc2: "Cover letter + CV: 16 €."
   notes1: Minimum order of 10 €.

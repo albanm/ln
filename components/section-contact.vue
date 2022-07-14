@@ -18,7 +18,7 @@
           </v-col>
           <v-col class="pa-6" cols="12" md="6">
             <v-row justify="center">
-              <v-col cols="12" lg="8">
+              <v-col cols="12" lg="12">
                 <div :class="{'mt-12': $vuetify.breakpoint.mdAndUp, 'mt-6': $vuetify.breakpoint.smAndDown, 'mb-6': true}">
                   <h2 class="text-h4 secondary--text">
                     {{ $t('contact') }}
@@ -33,11 +33,6 @@
                     <img width="20" height="20" style="position: absolute;left:2px;top:1px;" :src="basePath + 'fiverr2.png'">
                     <span style="padding-left: 30px;"><a target="_blank" href="https://www.fiverr.com/s2/b7c08b3aba">Fiverr</a></span>
                     <br><span style="padding-left: 30px;" class="caption">{{ $t('fiverrNote') }}</span>
-                  </p>
-                  <p style="position: relative;">
-                    <img width="24" height="24" style="position: absolute;" :src="basePath + '5euros.png'">
-                    <span style="padding-left: 30px;"><a target="_blank" href="https://5euros.com/service/260910/corriger-500-mots-1">5euros.com</a></span>
-                    <br><span style="padding-left: 30px;" class="caption">{{ $t('5eurosNote') }}</span>
                   </p>
                 </div>
               </v-col>
