@@ -28,7 +28,6 @@
               <li>{{ $t('simple3') }}</li>
               <li>{{ $t('simple4') }}</li>
               <li>{{ $t('simple5') }}</li>
-              <li>{{ $t('simple6') }}</li>
             </ul>
           </v-card-text>
         </v-card>
@@ -62,7 +61,6 @@ fr:
   simple3: typographie
   simple4: syntaxe
   simple5: sémantique
-  simple6: vérification et correction d'éléments factuels (noms propres, dates, géographie, etc.)
   deep: Réécriture
   deep1: "À la correction peut s'ajouter :"
   deep2: une reformulation des passages maladroits
@@ -76,7 +74,6 @@ en:
   simple3: typography
   simple4: syntax
   simple5: semantic
-  simple6: verification and correction of factual elements (proper nouns, dates, geography...)
   deep: Rewriting
   deep1: "This is a proofreading to which are added :"
   deep2: rewording of awkward passages
