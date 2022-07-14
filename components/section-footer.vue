@@ -10,7 +10,7 @@
         </v-btn>
       </v-col>
       <v-col class="text-center mb-12" cols="12">
-        <v-icon>mdi-copyright</v-icon>&nbsp;2021 - Hélène Cabillic
+        <v-icon>mdi-copyright</v-icon>&nbsp;2022 - Hélène Cabillic
       </v-col>
     </v-row>
   </v-footer>
