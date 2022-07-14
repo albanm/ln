@@ -72,7 +72,7 @@ fr:
   simple: Correction
   simple1: 2 € les 1000 signes, soit environ 3 € par page <span class="avoidwrap">(1 page ≈ 1500 signes)</span>
   deep: Réécriture
-  deep1: 3 € les 1000 signes, soit environ 4,5 € par page
+  deep1: 3 € les 1000 signes, soit environ 4,50 € par page
   shortDoc: Correction rapide&nbsp;<span class="avoidwrap">(1 page)</span>
   shortDoc1: "Lettre administrative, lettre de motivation, CV : 10 €"
   shortDoc2: "Lettre de motivation + CV : 16 €"
